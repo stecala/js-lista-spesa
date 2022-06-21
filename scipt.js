@@ -8,3 +8,9 @@ while(i<shoppingList.length){
     cartElement.append(elementToShop);
     i++;
 }
+const liClick = cartElement.children; 
+console.log(liClick);
+liClick.addEventListener('click', function(){
+    elementToShop.classList.remove('list-group-item-warning');
+    elementToShop.classList.add('text-decoration-line-through','list-group-item-info');
+})
